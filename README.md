@@ -1,2 +1,2 @@
-# ship-php-mysql-lighttpd-redis
-Docker compose setup for PHP, MySQL (MariaDB), Lighttpd and Redis.
+# ship-node-mysql-redis
+Docker compose setup for Node, MySQL (MariaDB) and Redis.
