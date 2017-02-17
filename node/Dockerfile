@@ -8,10 +8,10 @@ RUN adduser -D www-data
 RUN apk update && apk upgrade
 
 # add default packages
-RUN apk add tzdata bash wget curl sudo nano htop perl
+RUN apk add --update tzdata bash wget curl sudo nano htop perl
 
 # add node
-RUN apk add nodejs
+RUN apk add --update nodejs
 
 # chown timezone files
 RUN touch /etc/timezone /etc/localtime && \
