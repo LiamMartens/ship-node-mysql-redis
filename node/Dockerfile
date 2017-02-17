@@ -17,6 +17,9 @@ RUN apk add --update nodejs
 RUN touch /etc/timezone /etc/localtime && \
     chown www-data:www-data /etc/localtime /etc/timezone
 
+# create directory
+RUN mkdir /var/www && chown www-data:www-data /var/www
+
 # set volume
 VOLUME [ "/var/www" ]
 

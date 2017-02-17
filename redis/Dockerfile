@@ -13,7 +13,7 @@ RUN apk add --update tzdata bash wget curl sudo nano htop perl
 # install redis
 RUN apk add --update redis
 
-# create php directory
+# create redis directory
 RUN mkdir -p /etc/redis /var/log/redis /var/run/redis /var/www /var/lib/redis && \
     chown -R www-data:www-data /etc/redis /var/log/redis /var/run/redis /var/www /var/lib/redis
 
