@@ -18,7 +18,8 @@ RUN touch /etc/timezone /etc/localtime && \
     chown www-data:www-data /etc/localtime /etc/timezone
 
 # create directory
-RUN mkdir /var/www && chown www-data:www-data /var/www
+RUN mkdir /var/www /home/www-data/.node_modules && \
+    chown www-data:www-data /var/www /home/www-data/.node_modules
 
 # set volume
 VOLUME [ "/var/www" ]
